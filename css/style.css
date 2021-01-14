@@ -230,3 +230,9 @@ html{
         width: 80%;
     }
 }
+@media only screen and (max-width: 300px){
+    #mynavigation ul a{
+        font-size: 0.8rem; 
+    
+    }
+}
