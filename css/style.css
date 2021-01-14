@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'heebo',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+.add-color{
+    color: rgb(29, 221, 228);
+}
+/* navigation area */
+.banner{
+    width: 100%;
+    background-color: #e8e8e8;
+}
+#mynavigation{
+    margin-top: 1rem;
+}
+.logo img{
+    width: 30%;
+}
+.right-button .fa{
+    font-size: 1.5rem;
+}
+#mynavigation ul{
+    margin-right: 2rem;
+}
+#mynavigation ul li{
+    margin-top: 1rem;
+    list-style: none;
+    margin-left: 4rem;
+    
+}
+
+#mynavigation ul a{
+    list-style: none;
+    color: black;
+    font-size: 1rem; 
+
+}
+#mynavigation ul a:hover{
+    color: rgb(48, 252, 235);
+}
+/*banner area */
+.intro {
+    margin-top: 9rem;
+}
+.intro h1{
+    font-size: 5rem;
+    font-weight: 900;
+}
+.intro button{
+    width: 180px;
+    height: 45px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 1.4rem;
+    font-family: 'heebo',sans-serif;
+    font-weight: 400;
+}
+.intro button:hover{
+    background-color: rgb(50, 224, 255);
+}
+.intro .fa{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+   
+}
+.intro img{
+    width: 70%;
+}
+/*banner area ends here */
+
+/* discount area starts here */
+.discount{
+    background-color: rgb(29, 221, 228); 
+    color: #fff;
+    padding: 8%;
+    
+}
+.discount h1{
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+.discount span{
+    font-weight: 400;
+    color: black;
+}
+.discount-img{
+    width: 100%;
+}
+.add-background{
+    background-color: #ebeff2;
+    margin-top: 2rem;
+}
+/* discount area ends */
+/* trending categories */
+.trend{
+    margin-top: 4rem;
+}
+.trend h3{
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+}
+.trending img{
+    width: 95%;
+}
+.add-margin img{
+    margin-top: 3rem;
+}
+.trending h3{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+/* featured area starts here */
+.featured {
+    margin-top: 3rem;
+}
+.feature{
+    font-size: 2.7rem;
+    margin-bottom:3rem;
+}
+.brands .design-chair{
+    margin-top: 3rem;
+}
+.changes-1{
+    margin-top: 5rem;
+}
+.changes-2{
+    margin-top: 6.3rem;
+}
+.changes-3{
+    margin-top: 2.6rem;
+}
+.changes-4{
+    margin-top: 3.2rem;
+}
+/* featured area end */
+/* contact us area starts here */
+.contact-us{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-us h3{
+    font-size: 2.7rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.contact-us {
+    width: 50%;
+    padding: 5%;
+    background-color: #ebebeb;
+    box-shadow: 10px 10px 10px rgb(219, 219, 219);
+}
+.contact-us button{
+    width: 90px;
+    height: 38px;
+    background-color: black;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+/* contact us area end here */
+/* footer area starts here */
+.wrapper{
+    width: 100%;
+    background-color: #0a2400;
+    padding: 3%;
+}
+.wrapper .fa{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+.wrapper p{
+    color: #fff;
+    font-size: 1rem;
+}
+/*media query */
+
+@media only screen and (max-width: 768px){
+    .logo img{
+        width: 80%;
+    }
+    .intro{
+        text-align: center;
+        margin-top: 6rem;
+    }
+    .intro h1{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        line-height:6rem;
+    }
+    .intro button{
+        margin-bottom: 4rem;
+    }
+    .chair img{
+        width: 80%;
+        margin-left: 2.5rem;
+    }
+    .discount{
+        padding: 12%;
+    }
+    .discount h1{
+        font-size: 2.6rem;
+
+    }
+    .discount-img {
+        width: 80%;
+    }
+    .add-margin img {
+        margin-top: 0;
+    }
+    .trending h3{
+        margin-bottom: 4rem;
+    }
+    .brands h3{
+        margin-top: 1rem;
+    }
+    .brands img{
+        margin-top: 4rem;
+    }
+    .feature {
+        margin-bottom: 0;
+    }
+    .contact-us {
+        width: 80%;
+    }
+}

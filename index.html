@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Niture</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!--top navigation and banner area-->
+      <header class="container-fluid banner" >
+          <nav> 
+              <div class="row " id="mynavigation">
+                  <div class="col-lg-6 col-xs-6 logo">
+                    <figure> <img src="images/logo.jpg" alt="this is company logo"> </figure>
+                  </div>
+                  <div class="col-lg-6 col-xs-6 right-button text-right">
+                      <span class="fa fa-align-justify" data-toggle="collapse" data-target="#mybtn"></span>
+                      <ul class="collapse" id="mybtn" >
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">About us</a> </li>
+                        <li> <a href="#">Contact us</a> </li>
+                        <li> <a href="#">Services</a> </li>
+                        <li> <a href="#">Portfolio</a> </li>
+                      </ul>
+
+                  </div>
+              </div>
+          </nav>
+          <!--banner area-->
+          <div class="row">
+            <div class="col-lg-6 intro">
+              <h1> <span class="add-color">THE LATEST</span> <br> FURNITURE <br> DESIGN</h1>
+              <button class="btn btn-default">SHOP NOW <span class="fa fa-caret-right"></span></button>
+            </div>
+            <div class="col-lg-6 chair">
+              <figure><img src="images/bg.jpg" alt=""></figure>
+
+            </div>
+          </div>
+      </header>
+      <!--header and banner area ends here-->
+      <!--discount area starts here-->
+      <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!--indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <!--wrapper for slides-->
+          <div class="carousel-inner add-background">
+            <div class="item active ">
+              <div class="row">
+                <div class="col-lg-8 col-sm-8 col-xs-7  discount text-center">
+                  <h1>50% DISCOUNT <br><span>the latest collection</span></h1>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-5">
+                  <figure class="discount-img"><img src="images/discount.jpg" alt=""></figure>
+                </div>
+              </div>
+            </div>
+            <div class="item ">
+              <div class="row">
+                <div class="col-lg-8 col-sm-8 col-xs-7 discount text-center">
+                  <h1>50% DISCOUNT <br> <span>the latest collection</span></h1>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-5">
+                  <figure class="discount-img"><img src="images/discount.jpg" alt=""></figure>
+                </div>
+              </div>
+            </div>
+            <div class="item ">
+              <div class="row">
+                <div class="col-lg-8 col-sm-8 col-xs-7  discount text-center">
+                  <h1>50% DISCOUNT <br> <span>the latest collection</span></h1>
+                </div>
+                <div class="col-lg-4 col-sm-4 col-xs-5">
+                  <figure class="discount-img"><img src="images/discount.jpg" alt=""></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--left and right controls-->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">next</span>
+          </a>
+        </div>
+      </div>
+    <!--discount area ends here-->
+      
+    <!--trending categories area-->
+    <section class="container-fluid trend text-center">
+      <h3><span class="add-color">Trending</span> Categories</h3>
+      <div class="row">
+        <div class="col-lg-4 trending">
+          <figure class="add-margin"><img src="images/1.jpg" alt=""></figure>
+          <h3>Outdoor</h3>
+        </div>
+        <div class="col-lg-4 trending">
+          <figure><img src="images/2.jpg" alt=""></figure>
+          <h3>Living Room</h3>
+        </div>
+        <div class="col-lg-4 trending">
+          <figure class="add-margin"><img src="images/3.jpg" alt=""></figure>
+          <h3>Bedroom Lightning</h3>
+        </div>
+      </div> 
+
+    </section>
+<!--trending categories area ends here-->
+    <!--featured area-->
+    <div class="container-fluid featured text-center">
+      <h3 class="feature"> <span class="add-color">Featured</span>Brands</h3>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="brands">
+            <img src="icon/p1.png" alt="">
+            <h3 class="changes-1"> Jane Lauren Design Chair</h3>
+            <p>$80.00</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="brands">
+            <img class="design-chair" src="icon/p2.png" alt="">
+            <h3 class="changes-2"> Jane Lauren Design Chair</h3>
+            <p>$80.00</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="brands">
+            <img src="icon/p3.png" alt="">
+            <h3 class="changes-3"> Jane Lauren Design Chair</h3>
+            <p>$80.00</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="brands">
+            <img src="icon/p4.png" alt="">
+            <h3 class="changes-4"> Jane Lauren Design Chair</h3>
+            <p>$80.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--contact us area starts here-->
+    <div class="container contact-us">
+      <h3 class="text-center"> <span class="add-color">Contact</span> us </h3>
+      <form action="">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="#name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="phonr">Phone</label>
+          <input type="number"class="form-control" id="phone" placeholder="Phone">
+        </div>
+        <div class="form-group">
+          <label for="text-area">Message</label>
+          <textarea name="message" id="mymessage" placeholder="message" class="form-control" cols="30" rows="10"></textarea>
+        </div>
+        <button type="button" class="btn btn-default" class="black-button">Send</button>
+      </form>
+    </div>
+    <!--footer area starts here-->
+    <footer class=" wrapper">
+      <div class="container text-center">
+        <span class="fa fa-twitter"></span>
+        <span class="fa fa-facebook"></span>
+        <span class="fa fa-instagram"></span>
+        <span class="fa fa-linkedin"></span>
+        <p>Copyright 2025 All Right Reserved By Free html Templates</p>
+      </div>
+    </footer>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
