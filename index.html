@@ -1,204 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niture</title>
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="js/script.min.js"></script>
-    <script src="js/script.js"></script>
-  </head>
-  <body>
-    <!--top navigation and banner area-->
-      <header class="container-fluid banner" >
-          <nav> 
-              <div class="row " id="mynavigation">
-                  <div class="col-lg-6 col-xs-6 logo">
-                    <figure> <img src="images/logo.jpg" alt="this is company logo"> </figure>
-                  </div>
-                  <div class="col-lg-6 col-xs-6 right-button text-right">
-                      <span class="fa fa-align-justify" data-toggle="collapse" data-target="#mybtn"></span>
-                      <ul class="collapse" id="mybtn" >
-                        <li> <a href="#">Home</a> </li>
-                        <li> <a href="#">About us</a> </li>
-                        <li> <a href="#">Contact </a> </li>
-                        <li> <a href="#">Services</a> </li>
-                        <li> <a href="#">Portfolio</a> </li>
-                      </ul>
-
-                  </div>
-              </div>
-          </nav>
-          <!--banner area-->
-          <div class="row">
-            <div class="col-lg-6 intro">
-              <h1> <span class="add-color">THE LATEST</span> <br> FURNITURE <br> DESIGN</h1>
-              <button class="btn btn-default">SHOP NOW <span class="fa fa-caret-right"></span></button>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- intro frame -->
+    <header class="wrapper">
+        <nav class="navigation">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
             </div>
-            <div class="col-lg-6 chair">
-              <figure><img src="images/bg.jpg" alt=""></figure>
-
+            
+                <input type="checkbox" id="check">
+               <label for="check" class="toggle-btn">
+                   <i class="fas fa-bars"></i>
+               </label>
+    
+            <ul class="menu-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+        <!-- navigation ends -->
+        <!-- banner starts here -->
+        <div class="intro container flex">
+            <div class="intro-text">
+                <h1>the Latest <span>furniture </span> <span>design</span></h1>
+                <button class="shop-btn">Shop Now <i class="fas fa-caret-right"></i></button>
             </div>
-          </div>
-      </header>
-      <!--header and banner area ends here-->
-      <!--discount area starts here-->
-      <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!--indicators-->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <!--wrapper for slides-->
-          <div class="carousel-inner add-background">
-            <div class="item active ">
-              <div class="row">
-                <div class="col-lg-8 col-sm-8 col-xs-7  discount text-center">
-                  <h1>50% DISCOUNT <br><span>the latest collection</span></h1>
-                </div>
-                <div class="col-lg-4 col-sm-4 col-xs-5">
-                  <figure class="discount-img"><img src="images/discount.jpg" alt=""></figure>
-                </div>
-              </div>
+            <div class="intro-img">
+                <img src="images/bg.jpg" alt="">
             </div>
-            <div class="item ">
-              <div class="row">
-                <div class="col-lg-8 col-sm-8 col-xs-7 discount text-center">
-                  <h1>50% DISCOUNT <br> <span>the latest collection</span></h1>
+        </div>
+    </header>
+    <!-- carousel part discount section -->
+    <div class="owl-carousel container" id="discount-section">
+        <!-- carousel-1 starts  -->
+        <div>  
+            <div class="discount flex">
+                <div class="discount-text">
+                    <h1>50% Discount</h1>
+                    <p>The Latest Colllection</p>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-5">
-                  <figure class="discount-img"><img src="images/discount.jpg" alt=""></figure>
+                <div class="discount-img">
+                  
                 </div>
-              </div>
             </div>
-            <div class="item ">
-              <div class="row">
-                <div class="col-lg-8 col-sm-8 col-xs-7  discount text-center">
-                  <h1>50% DISCOUNT <br> <span>the latest collection</span></h1>
+        </div>
+        <!-- carousel-1 ends  -->
+        <div>  
+            <div class="discount flex">
+                <div class="discount-text">
+                    <h1>50% Discount</h1>
+                    <p>The Latest Colllection</p>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-5">
-                  <figure class="discount-img"><img src="images/discount.jpg" alt=""></figure>
+                <div class="discount-img">
                 </div>
-              </div>
             </div>
-          </div>
-          <!--left and right controls-->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">next</span>
-          </a>
+        </div>
+        <!--  -->
+        <div>  
+            <div class="discount flex">
+                <div class="discount-text">
+                    <h1>50% Discount</h1>
+                    <p>The Latest Colllection</p>
+                </div>
+                <div class="discount-img">
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div>  
+            <div class="discount flex">
+                <div class="discount-text">
+                    <h1>50% Discount</h1>
+                    <p>The Latest Colllection</p>
+                </div>
+                <div class="discount-img">
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div>  
+            <div class="discount flex">
+                <div class="discount-text">
+                    <h1>50% Discount</h1>
+                    <p>The Latest Colllection</p>
+                </div>
+                <div class="discount-img">
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div>  
+            <div class="discount flex">
+                <div class="discount-text">
+                    <h1>50% Discount</h1>
+                    <p>The Latest Colllection</p>
+                </div>
+                <div class="discount-img">
+                </div>
+            </div>
         </div>
       </div>
-    <!--discount area ends here-->
-      
-    <!--trending categories area-->
-    <section class="container-fluid trend text-center">
-      <h3><span class="add-color">Trending</span> Categories</h3>
-      <div class="row">
-        <div class="col-lg-4 trending">
-          <figure class="add-margin"><img src="images/1.jpg" alt=""></figure>
-          <h3>Outdoor</h3>
-        </div>
-        <div class="col-lg-4 trending">
-          <figure><img src="images/2.jpg" alt=""></figure>
-          <h3>Living Room</h3>
-        </div>
-        <div class="col-lg-4 trending">
-          <figure class="add-margin"><img src="images/3.jpg" alt=""></figure>
-          <h3>Bedroom Lightning</h3>
-        </div>
-      </div> 
 
+<!-- trending categories -->
+    <section class="container trending-section">
+        <h1><span class="add-blue">Trending</span> Categories</h1>
+        <div class="trending flex">
+            <div class="trending-1 trending-first">
+                <figure>
+                    <img src="images/1.jpg" alt="">
+                    <figcaption>Outdoor</figcaption>
+                </figure>
+            </div>
+            <div class="trending-1 trending-2">
+                <figure>
+                    <img src="images/2.jpg" alt="">
+                    <figcaption>Living Room</figcaption>
+                </figure>
+            </div>
+            <div class="trending-1 trending-3">
+                <figure>
+                    <img src="images/3.jpg" alt="">
+                    <figcaption>Bedroom Lightning</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>  
+
+<!-- Featured brands -->
+    <section class="featured-section container">
+        <h1><span class="add-blue">Featured</span> Brands</h1>
+        <div class="featured-img flex">
+            <div class="featured-img-1">
+                <figure>
+                    <img class="featured-bulb" src="icon/p1.png" alt="">
+                    <figcaption>
+                        <h3>Jane Lauren Design Chair</h3>
+                        <p>$80.00</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="featured-img-1">
+                <figure>
+                    <img src="icon/p2.png" alt="">
+                    <figcaption>
+                        <h3>Jane Lauren Design Chair</h3>
+                        <p>$80.00</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="featured-img-1">
+                <figure>
+                    <img src="icon/p3.png" alt="">
+                    <figcaption>
+                        <h3>Jane Lauren Design Chair</h3>
+                        <p>$80.00</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="featured-img-1">
+               <figure>
+                   <img src="icon/p4.png" alt="">
+                   <figcaption>
+                       <h3>Jane Lauren Design Chair</h3>
+                       <p>$80.00</p>
+                   </figcaption>
+               </figure>
+            </div>
+        </div>
+        <!-- featured-text -->
+        <div class="featured-text flex">
+            <div class="featured-text-1">
+                <h3>Jane Lauren Design Chair</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="featured-text-1">
+                <h3>Jane Lauren Design Chair</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="featured-text-1">
+                <h3>Jane Lauren Design Chair</h3>
+                <p>$80.00</p>
+            </div>
+            <div class="featured-text-1">
+                <h3>Jane Lauren Design Chair</h3>
+                <p>$80.00</p>
+            </div>
+        </div>
     </section>
-<!--trending categories area ends here-->
-    <!--featured area-->
-    <div class="container-fluid featured text-center">
-      <h3 class="feature"> <span class="add-color">Featured</span>Brands</h3>
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="brands">
-            <img src="icon/p1.png" alt="">
-            <h3 class="changes-1"> Jane Lauren Design Chair</h3>
-            <p>$80.00</p>
-          </div>
+    <!-- form section -->
+    <form action="action_page.php">
+        <div class="container contact-form">
+          <h1><span class="add-blue">Contact</span> Us </h1>
+          <hr>
+
+          <label for="Name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name"  required>
+      
+          <label for="Email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email"  required>
+      
+          <label for="phone"><b>phone</b></label>
+          <input type="text" placeholder="Enter Phone"  required>
+
+          <label for="Message"><b>Message</b></label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <hr>
+          <button type="submit" class="send">SEND</button>
         </div>
-        <div class="col-lg-3">
-          <div class="brands">
-            <img class="design-chair" src="icon/p2.png" alt="">
-            <h3 class="changes-2"> Jane Lauren Design Chair</h3>
-            <p>$80.00</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="brands">
-            <img src="icon/p3.png" alt="">
-            <h3 class="changes-3"> Jane Lauren Design Chair</h3>
-            <p>$80.00</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="brands">
-            <img src="icon/p4.png" alt="">
-            <h3 class="changes-4"> Jane Lauren Design Chair</h3>
-            <p>$80.00</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--contact us area starts here-->
-    <div class="container contact-us">
-      <h3 class="text-center"> <span class="add-color">Contact</span> us </h3>
-      <form action="">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="#name" placeholder="Name">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" class="form-control" placeholder="Email">
-        </div>
-        <div class="form-group">
-          <label for="phonr">Phone</label>
-          <input type="number"class="form-control" id="phone" placeholder="Phone">
-        </div>
-        <div class="form-group">
-          <label for="text-area">Message</label>
-          <textarea name="message" id="mymessage" placeholder="message" class="form-control" cols="30" rows="10"></textarea>
-        </div>
-        <button type="button" class="btn btn-default" class="black-button">Send</button>
       </form>
-    </div>
-    <!--footer area starts here-->
-    <footer class=" wrapper">
-      <div class="container text-center">
-        <span class="fa fa-twitter"></span>
-        <span class="fa fa-facebook"></span>
-        <span class="fa fa-instagram"></span>
-        <span class="fa fa-linkedin"></span>
-        <p>Copyright 2025 All Right Reserved</p>
-      </div>
-    </footer>
+<!-- footer starts here -->
+      <footer class="footer">
+          <div class="social">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-instagram-square"></i></span>
+            <span><i class="fab fa-linkedin"></i></span>
+          </div>
+        <p>Copyright 2025 All Right Reserved and created By Hayat khan</p>
+      </footer>
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"> </script>
+</body>
 </html>

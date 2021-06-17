@@ -1,5 +1,19 @@
-$(function(){
-    $(".intro h1").fadeOut(1000);
-    $(".intro h1").fadeIn(1000);
-}  
-    )
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1200:{
+                items:1
+            },
+        }
+    });
+  });

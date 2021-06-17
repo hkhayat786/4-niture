@@ -1,238 +1,369 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'heebo',sans-serif;
     box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
 }
 html{
-    font-size: 15px;
+    font-size: 10px;
 }
-.add-color{
-    color: rgb(29, 221, 228);
-}
-/* navigation area */
-.banner{
-    width: 100%;
-    background-color: #e8e8e8;
-}
-#mynavigation{
-    margin-top: 1rem;
-}
-.logo img{
-    width: 30%;
-}
-.right-button .fa{
-    font-size: 1.5rem;
-}
-#mynavigation ul{
-    margin-right: 2rem;
-}
-#mynavigation ul li{
-    margin-top: 1rem;
-    list-style: none;
-    margin-left: 4rem;
-    
-}
-
-#mynavigation ul a{
-    list-style: none;
-    color: black;
-    font-size: 1rem; 
-
-}
-#mynavigation ul a:hover{
-    color: rgb(48, 252, 235);
-}
-/*banner area */
-.intro {
-    margin-top: 9rem;
-}
-.intro h1{
-    font-size: 5rem;
-    font-weight: 900;
-}
-.intro button{
-    width: 180px;
-    height: 45px;
-    background-color: #fff;
-    border: 1px solid black;
-    font-size: 1.4rem;
-    font-family: 'heebo',sans-serif;
-    font-weight: 400;
-}
-.intro button:hover{
-    background-color: rgb(50, 224, 255);
-}
-.intro .fa{
-    font-size: 1.2rem;
-    margin-left: 1rem;
-   
-}
-.intro img{
-    width: 70%;
-}
-/*banner area ends here */
-
-/* discount area starts here */
-.discount{
-    background-color: rgb(29, 221, 228); 
-    color: #fff;
-    padding: 8%;
-    
-}
-.discount h1{
-    font-size: 3rem;
-    margin-top: 3rem;
-}
-.discount span{
-    font-weight: 400;
-    color: black;
-}
-.discount-img{
-    width: 100%;
-}
-.add-background{
-    background-color: #ebeff2;
-    margin-top: 2rem;
-}
-/* discount area ends */
-/* trending categories */
-.trend{
-    margin-top: 4rem;
-}
-.trend h3{
-    font-size: 2.7rem;
-    margin-bottom: 2rem;
-}
-.trending img{
-    width: 95%;
-}
-.add-margin img{
-    margin-top: 3rem;
-}
-.trending h3{
+body{
     font-size: 1.6rem;
-    margin-top: 2rem;
 }
-/* featured area starts here */
-.featured {
-    margin-top: 3rem;
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.feature{
-    font-size: 2.7rem;
-    margin-bottom:3rem;
-}
-.brands .design-chair{
-    margin-top: 3rem;
-}
-.changes-1{
-    margin-top: 5rem;
-}
-.changes-2{
-    margin-top: 6.3rem;
-}
-.changes-3{
-    margin-top: 2.6rem;
-}
-.changes-4{
-    margin-top: 3.2rem;
-}
-/* featured area end */
-/* contact us area starts here */
-.contact-us{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.contact-us h3{
-    font-size: 2.7rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-.contact-us {
-    width: 50%;
+.container{
+    max-width: 1200px;
     padding: 5%;
-    background-color: #ebebeb;
-    box-shadow: 10px 10px 10px rgb(219, 219, 219);
+    margin: 0 auto;
 }
-.contact-us button{
-    width: 90px;
-    height: 38px;
-    background-color: black;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 300;
+.add-blue{
+    color: rgb(50, 203, 241);
 }
-/* contact us area end here */
-/* footer area starts here */
 .wrapper{
     width: 100%;
-    background-color: #0a2400;
-    padding: 3%;
+    height: 100%;
+    background-color: #e8eae9;
 }
-.wrapper .fa{
-    font-size: 1.2rem;
+.navigation{
+    max-width: 1200px;
+    height: 12vh;
+    padding: 2% 5%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.logo img{
+    width: 80%;
+}
+#check{
+    display: none;
+}
+.menu-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu-links li{
+    font-size: 1.8rem;
+    margin: 1.5rem;
+    list-style: none;
+}
+.menu-links li a{
+    text-decoration: none;
+    padding: 1.2rem 1.5rem;
+    color: black;
+    transition: all 0.3s;
+}
+.menu-links li a:hover{
+    background-color: black;
     color: #fff;
-    padding: 5px;
-    margin-bottom: 1rem;
+    border-radius: 5rem;
 }
-.wrapper p{
+.toggle-btn i {
+    display: none;
+}
+/* navigation ends */
+/* intro starts here */
+.intro-text,.intro-img{
+    width: 50%;
+    text-align: left;
+    flex-direction: row;
+}
+.intro-text h1{
+    font-size: 8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    line-height: 9rem;
+    padding-top: 10%;
+}
+.intro-text h1 span{
+    display: block;
+    color: rgb(24, 184, 224);
+}
+.intro-img img{
+    width: 100%;
+}
+.shop-btn{
+    width: 16rem;
+    height: 5rem;
+    font-size: 2rem;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.shop-btn i{
+    margin-left: .5rem;
+}
+.shop-btn:hover{
+    background-color: rgb(50, 203, 241);
     color: #fff;
-    font-size: 1rem;
+    border: none;
 }
-/*media query */
+/* carousel-area starts here */
+#discount-section{
+    position: relative;
+}
+.discount-text,.discount-img{
+    width: 50%;
+    padding: 10%;
+}
+.discount-text{
+    background-color: rgb(50, 203, 241);
+    color: #fff;
+    text-align:center;
+}
+.discount-text h1{
+    font-size: 4rem;
+    font-weight: 500;
+    padding-top: 15%;
+}
+.discount-text p{
+    font-size: 4rem;
+    color: black;
+}
+.discount-img {
+    background-image: url("../images/discount.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* owl nav */
+#discount-section .owl-nav{
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#discount-section .owl-nav .owl-prev{
+    position: absolute;
+    left: 10%;
+    display: block;
+    width: 5%;
+    border-radius: 100%;
+    color: #fff;
+}
+#discount-section .owl-nav .owl-prev span,#discount-section .owl-nav .owl-next span{
+    font-size: 8rem;
+}
+#discount-section .owl-nav .owl-next{
+    position: absolute;
+    right: 10%;
+    display: block;
+    width: 5%;
+    border-radius: 100%;
+    color: #fff;
+}
+/* trending section */
+.trending-section > h1{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.trending{
+    margin-top: 3.5rem;
+    text-align: center;
+}
+.trending-1{
+    width: 32%;
+}
+.trending-1 img{
+    width: 100%;
+}
+.trending-1 figcaption{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+.trending-first,.trending-3{
+    margin-top: 3rem;
+}
+
+/* featured brand section */
+.featured-section > h1{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+.featured-img-1,.featured-text-1{
+    text-align: center;
+    width: 24%;
+}
+.featured-img-1 img{
+    width: 80%;
+    margin-top: 6rem;
+}
+.featured-text{
+    margin-top: 2.5rem;
+}
+.featured-img-1 figcaption{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    display: none;
+}
+.featured-bulb{
+    width: 40% !important;
+}
+/* form section starts here */
+.contact-form > h1{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+.contact-form input[type=text], input[type=password], select, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+ .contact-form input[type=text]:focus, input[type=password]:focus , select:focus, textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+ .contact-form  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  .contact-form button {
+    background-color: rgb(50, 203, 241);
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  /* footer area starts here */
+  footer{
+      width: 100%;
+      text-align: center;
+      padding: 4%;
+      background-color: rgb(0, 43, 35);
+      color: #fff;
+      margin-top: 5rem;
+  }
+  footer i{
+      font-size: 2rem;
+      padding: 1.2rem;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+  }
+  footer p{
+      font-size: 1.6rem;
+      letter-spacing: 1.2px;
+      margin-top: 2rem;
+  }
+  footer i:hover{
+      color: rgb(50, 203, 241);
+  }
+/* media query for ipad */
+@media only screen and (max-width: 992px){
+    .navigation{
+        padding: 2% 0;
+    }
+    .toggle-btn i{
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+        padding-right: 2rem;
+    }
+    .logo img{
+        padding-left: 2rem;
+    }
+    .menu-links{
+        position: fixed;
+        top: 12vh;
+        width: 100%;
+        right: -100%;
+        height: 90vh;
+        background-color: #e8eae9;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        overflow-x: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    .menu-links > li{
+        margin-top: 3.5rem;
+    }
+    .menu-links li {
+        font-size: 2rem;
+    }
+    #check:checked ~.menu-links{
+        right: 0%;
+    }
+    #check:checked ~.toggle-btn i::before{
+        content: "\f00d";
+    }
+    /* navigation ends */
+    /* intro area starts here */
+    .intro{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .intro-text,.intro-img{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 768px){
-    .logo img{
-        width: 80%;
-    }
-    .intro{
-        text-align: center;
-        margin-top: 6rem;
-    }
-    .intro h1{
+    .intro-text h1{
         font-size: 4rem;
-        margin-bottom: 2rem;
-        line-height:6rem;
+        font-weight: 600;
+        line-height: 4.5rem;
     }
-    .intro button{
-        margin-bottom: 4rem;
+    .discount-text h1{
+        font-size: 2.5rem;
     }
-    .chair img{
-        width: 80%;
-        margin-left: 2.5rem;
+    .discount-text p{
+        font-size: 2.5rem;
     }
-    .discount{
-        padding: 12%;
+    #discount-section .owl-nav .owl-prev span,#discount-section .owl-nav .owl-next span{
+        font-size: 4rem;
     }
-    .discount h1{
-        font-size: 2.2rem;
-
+    .trending-1{
+        width: 90%;
+        margin: 0 auto 2.5rem auto;
     }
-    .discount-img {
-        width: 80%;
+    .trending-1 figcaption{
+        font-size: 2rem;
+        font-weight: 700;
     }
-    .add-margin img {
-        margin-top: 0;
+    .featured-img-1{
+        width: 90%;
+        margin: 0 auto 2.5rem auto;
     }
-    .trending h3{
-        margin-bottom: 4rem;
+    .featured-img-1 figcaption{
+        display: block;
     }
-    .brands h3{
-        margin-top: 1rem;
+    .featured-text{
+        display: none;
     }
-    .brands img{
-        margin-top: 4rem;
-    }
-    .feature {
-        margin-bottom: 0;
-    }
-    .contact-us {
-        width: 80%;
-    }
-}
-@media only screen and (max-width: 300px){
-    #mynavigation ul a{
-        font-size: 0.5rem; 
-    
+    footer p{
+        font-size: 1.2rem;
+        letter-spacing: 1px;
     }
 }
