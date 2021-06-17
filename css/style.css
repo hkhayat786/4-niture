@@ -303,6 +303,7 @@ body{
         justify-content: space-around;
         overflow-x: hidden;
         transition: all 0.3s ease-in-out;
+        z-index: 999;
     }
     .menu-links > li{
         margin-top: 3.5rem;
